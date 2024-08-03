@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { PortableTextDisplayComponent } from './portable-text-display/portable-text-display.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [PortableTextDisplayComponent],
+  template: `
+    <h1>Check Out This Sanity Portable Text Magic!</h1>
+    <app-portable-text-display />
+  `,
 })
 export class AppComponent {
   title = 'sanity-portable-text-demo';
