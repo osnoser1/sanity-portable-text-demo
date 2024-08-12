@@ -6,6 +6,7 @@ import {
 import { ContentService } from '../content.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { LinkComponent } from './link.component';
+import { ImageComponent } from './image.component';
 
 @Component({
   selector: 'app-portable-text-display',
@@ -25,6 +26,9 @@ export class PortableTextDisplayComponent {
   );
 
   customComponents: PortableTextComponents = {
+    types: {
+      image: ImageComponent,
+    },
     marks: {
       link: LinkComponent,
     },
